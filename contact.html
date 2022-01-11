@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Punjab Grill - Contact Us</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.logo-cust{
+    width: 12%;
+}
+.site-header{
+    min-height: 25vh;
+}
+
+.navbar-nav .nav-item:hover {
+    background-color: #B59f0E;
+    color: #ffffff;
+    transition: all 0.3s ease-out;
+    border-radius: 5px;
+    height: 35px;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+@media screen and (max-width: 768px) {
+    .site-header {
+        min-height: 12vh;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .site-header .navbar-collapse {
+        background-color: rgba(160,159,159,0.4);
+        padding: 10px;
+    }
+}
+.contact {
+  padding-top: 10rem;
+  padding-right: 60px;
+}
+.contact-us{
+  padding-top: 90px;
+  padding-left: 250px;
+}
+.contact-us h3{
+  font-size: 23px;
+}
+.contact-us a{
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+}
+.contact-us i{
+  padding-right: 10px;
+}
+.form-box {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2rem;
+  left: 50px;
+}
+h2 {
+  margin-bottom: 0.7rem;
+  font-size: 2rem;
+}
+.map{
+  position: relative;
+  right: 30px;
+}
+.form-item {
+  margin-bottom: 0.7rem;
+}
+
+label,
+input,
+textarea {
+  font-family: "Arvo";
+  display: block;
+  width: 100%;
+  font-size: rem;
+  line-height: 1.4;
+}
+
+label {
+  margin-bottom: 3px;
+}
+
+input,
+textarea {
+  padding: 3px;
+  border: none;
+  border-radius: 5px;
+
+  background-color: rgba(250, 250, 250, 0.85);
+}
+
+input[type=submit] {
+  background-color: #B59f0E;
+  padding: 7px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  color: black;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+input[type=submit]:hover {
+  animation-name: submit-hover;
+  animation-duration: 0.7s;
+}
+
+input[type=submit]:active {
+  animation-name: submit-active;
+  animation-duration: 0.3s;
+}
+
+@keyframes submit-hover {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes submit-active {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.98);
+  }
+}
+</style>
+<body data-spy="scroll" data-target=".site-nav" data-offset="55"   >
+  <nav class="site-nav navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+        <a href="#page-home" class="navbar-brand"><img class="logo-cust" src="images/img/logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ToggleNav" aria-controls="ToggleNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-uppercase" id="ToggleNav">
+            <ul class="navbar-nav text-center ms-auto">
+                <li><a href="./index.html" class="nav-item nav-link">Home</a></li>
+                <li><a href="./index.html" class="nav-item nav-link">Our Story</a></li>
+                <li><a href="./index.html" class="nav-item nav-link">About Chef</a></li>
+                <li><a href="./index.html" class="nav-item nav-link">Gallery</a></li>
+                <li><a href="./contact.html" class="nav-item nav-link">Contact Us</a></li>
+                <li><a href="#" class="nav-item"nav-link><img src="images/img/clients/res.png"></a></li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+  <section style="background-image: url(images/background/Untitled.png); background-size: 100%; background-repeat: no-repeat;">
+    <section class="contact">
+      <div class="form-box">
+        <h2 class="h2" style="font: weight 100px;; font-size: 50px;">Contact Us</h2>
+        <form action="">
+          <div class="form-item">
+            <label for="name">Your name:</label>
+            <input type="text" name="name" id="name" required>
+          </div>
+          <div class="form-item">
+            <label for="email">Your email:</label>
+            <input type="email" name="email" id="email" required>
+          </div>
+          <div class="form-item">
+            <label for="message">Your message:</label>
+            <textarea name="message" id="message" cols="30" rows="7"></textarea>
+          </div>
+          <div class="form-item">
+            <input type="submit" value="Submit" id="submit">
+          </div>
+        </form>
+      </div> 
+    </section>
+    <div class="row">
+      <div class="col">
+        <div class="contact-us">
+          <div class="container">
+            <h1 class="section-header">Dubai</h1>
+            <h3>Email us at: </h3>
+            <br>
+            <a href="mailto:punjabgrill.oberoi@supereats.co.in"><i class="fas fa-envelope"></i>punjabgrill.oberoi@supereats.co.in</a>
+            <br>
+            <br>
+              <h3>Call us on: </h3>
+              <br>
+            <a href="tel:+971-50-194-1107"><i class="fas fa-phone"></i>+971-50-194-1107</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.5132084536945!2d55.26144491473095!3d25.185909738339568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f69cb3b0cc8f3%3A0x2273423c4aea172a!2sPunjab%20Grill!5e0!3m2!1sen!2sae!4v1640515675230!5m2!1sen!2sae" width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> 
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="contact-us">
+          <div class="container">
+            <h1 class="section-header">Abu Dhabi</h1>
+            <h3>Email us at: </h3>
+            <br>
+            <a href="mailto:punjabgrill.ritz@supereats.co.in"><i class="fas fa-envelope"></i>punjabgrill.ritz@supereats.co.in</a>
+            <br>
+            <br>
+              <h3>Call us on: </h3>
+              <br>
+            <a href="tel:+971-50-668-3054"><i class="fas fa-phone"></i>+971-50-668-3054</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3633.156939046474!2d54.48502501479769!3d24.410614784268006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e43d7096d696b%3A0x5e07ab9bb6f8cb88!2sPunjab%20Grill!5e0!3m2!1sen!2sae!4v1640800046665!5m2!1sen!2sae" width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>    
+    </div>
+      
+  <footer class="text-center text-white p" style="background-color: #B59f0E; text-decoration: none;">          
+      <div class="container">  
+        <section class="mt-5">
+          
+          <div class="row text-center d-flex justify-content-center pt-5" >
+            
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="/index.html" class="text-white">Home</a>
+              </h6>
+            </div>
+            
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="/index.html" class="text-white">Our Story</a>
+              </h6>
+            </div>
+            
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="/index.html" class="text-white">About Chef</a>
+              </h6>
+            </div>
+            
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="/index.html" class="text-white">Gallery</a>
+              </h6>
+            </div>
+            
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="./contact.html" class="text-white">Contact Us</a>
+              </h6>
+            </div>
+            
+          </div>
+        </section>
+        <!-- Section: Links -->
+
+        <hr class="my-4" />
+
+
+        <section class="text-center mb-5">
+          <a href="https://www.facebook.com/search/top?q=punjab%20grill%20dubai" class="text-white me-4">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/punjabgrilldubai" class="text-white me-4">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://api.whatsapp.com/send?phone=971501941107" class="text-white me-4">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </section>
+      </div>
+
+      <div
+          class="text-center p-3"
+          style="background-color: rgba(0, 0, 0, 0.2)"
+          >
+        © 2021 Copyright:
+        <a class="text-white" href="index.html">Punjab Grill</a
+          >
+      </div>
+    </footer>
+  </section>
+</body>
+<script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>   </body>
+</html>
