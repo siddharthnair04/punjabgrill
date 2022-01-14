@@ -10,7 +10,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  </head>
 <body data-spy="scroll" data-target=".site-nav" data-offset="55" style="background-image: url('images/background/1.png'); background-size: 100%; background-repeat:repeat-y;">
     <header id="page-home" class="site-header">
         <nav class="site-nav navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #000;">
@@ -34,7 +36,7 @@
     
         <!--Restaurant Intro-->  
         <section class=" layout-carousel align-cust carousel">
-                    <video muted autoplay loop class="homevid">
+                    <video muted loop class="homevid">
                         <source src="video/Punjabgrill_intro.mp4">
                     </video>    
         </section>
@@ -72,8 +74,8 @@
                 </section>
               </div>
               <div class="right">
-                  <div class="lead section-text">
-                    <h2 class="py-2 section-header animate__animated animate__slower animate__bounceInUp">Our Story</h2>
+                  <div class="lead animate__animated animate__delay-2s animate__bounceInLeft section-text">
+                    <h2 class="py-2 section-header animate__animated animate__bounceIn">Our Story</h2>
                       Savor the authentic taste of delectable north west frontier cuisine served on a platter with royal generosity.<br><br>We are known for serving royal experience on the plate for over 19 years.<br><br>Punjab Grill, a contemporary Indian restaurant is the perfect setting for lunch and dinner with colleagues, friends or a loved one. 
                       <div class="button">
                         <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#more-story" aria-controls="more-story">
@@ -82,18 +84,15 @@
                       </div>
                   </div>
                   <div class="modal hide fade in" id="more-story" tabindex="-1" role="dialog" aria-hidden="true">
-                    <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-dialog" role="document">
                       <div class="modal-content">
-                        <div class="modal-body scroll" style="text-align: left;">
-                          Watch our master chefs in their open kitchen in Dubai composing appetizing, creative small for sharing, and rich curries infused with genuine flavors from every corner of the subcontinent.<br>Join us in the evening for a glorious spread at the Chef’s Table or soak up in Dubai weather on our outdoor piazza dining overseeing the Grand Canal or opt for an express weekday business lunch. Raise a toast with flawlessly paired fine wines. Dine like royalty at our Punjabi Grill.
-                          Savor the authentic taste of delectable north west frontier cuisine served on a platter with royal generosity.
-                          <br><br>
-                          We are known for serving royal experience on the plate for over 19 years.
-                          <br><br>
-                          Punjab Grill, a contemporary Indian restaurant is the perfect setting for lunch and dinner with colleagues, friends or a loved one. Watch our master chefs in their open kitchen in Dubai composing appetizing, creative small for sharing, and rich curries infused with genuine flavors from every corner of the subcontinent.
+                        <div class="modal-body lead animate__animated animate__bounce" style="text-align: left;">
+                          Watch our master chefs in their open kitchen in Dubai composing appetizing, creative small for sharing, and rich curries infused with genuine flavors from every corner of the subcontinent.
                           Join us in the evening for a glorious spread at the Chef’s Table or soak up in Dubai weather on our outdoor piazza dining overseeing the Grand Canal or opt for an express weekday business lunch. Raise a toast with flawlessly paired fine wines. Dine like royalty at our Punjabi Grill.
                           <br>
+                          <br>
                           Established by two veterans of the Food & Beverage industry: Mr Amit Burman and Mr Rohit Aggarwal of Lite Bite Foods Private Limited,
+                          <br>
                           <br>
                           Punjab Grill has extended its roots in notable cities around the world.
                           <br>
@@ -207,8 +206,8 @@
             </div>
             <div class="right">
               <section class="col-md-12">
-                 <div class="lead scroll1 section-text">
-                  <h2 class="py-2 section-header">About Chef</h2>
+                 <div class="lead animate__animated animate__bounceInLeft animate__delay-4s scroll1 section-text">
+                  <h2 class="py-2 animate__animated animate__bounceIn animate__delay-1s section-header">About Chef</h2>
                    Passionate about food from a youthful age, Sandeep Ail’s culinary expedition began with his pursuit to recreate instant noodles as displayed on the packaging. Although accomplished in a wide range of cuisines, including Pan-Asian, European, and Italian, he decided to focus on Indian cuisine as it was closest to his heart. At Punjab Grill, he has reintroduced Indian food with contemporary sensibilities while retaining its essence. Chef Sandeep is renowned for narrating stories through his dishes. A story glutted with feelings, experiences, and most notably, love. Great food is first feasted by your eyes before it goes in your mouth. It cast off decadent experience which you treasure for a long time- He adds.
                  </div>
               </section>
@@ -218,57 +217,50 @@
         </div>
     </article>
     <!--Award-Section-->
-    <article>
-      <section class="container awards" style="display: flex;">
-        <div class="card">
-          <img class="card-img-top" src="images/img/Awards/timeout.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">4-time Time out high comneded Indian restaurant</h5>
-            <p class="card-text">2016,2017,2018,2019</p>
-            <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
-          </div>
-        </div>
-        <div class="card">
-          <img class="card-img-top" src="images/img/Awards/FACT-DINING-Awards.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Fact dining award winner</h5>
-            <p class="card-text">2019</p>
-            <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
-          </div>
-        </div>
-        <div class="card">
-          <img class="card-img-top" src="images/img/Awards/Whatson.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">What’s on chef of the year</h5>
-            <p class="card-text">2021</p>
-            <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
-          </div>
-        </div>
-        <div class="card">
-          <img class="card-img-top" src="images/img/Awards/hospitality.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Hozpitality Excellence Awards MENA</h5>
-            <p class="card-text">2017</p>
-            <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
-          </div>
-        </div>
-        <div class="card">
-          <!--<img class="card-img-top" src="images/img/Awards/hospitality.png" alt="Card image cap">-->
-          <div class="card-body">
-            <h5 class="card-title">Certification of Apreaciation</h5>
-            <p class="card-text">By Department of Culture and Tourism<br>Presented to<br>Chef Sandeep Ail</p>
-            <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
-          </div>
-        </div>
+    <article style="padding-bottom: 10%;">
+      <section class="container" >
+        <h2 class="section-title py-4">Awards</h2>
+        <div class="awards">
+          <ul class="tiles" >
+            <li>
+              <h2>Time Out highly commended Indian Restaurant</h2>
+              <h3>2016/2017/2018/2019</h3>
+            </li>
+            <li class="wow bounceInLeft" >
+              <img src="images/img/Awards/timeout.png" style="padding-bottom: 5%;">
+            </li>
+            <li>
+              <h2>What's On Chef of the year</h2>
+              <h3>2021</h3>
+            </li>
+            <li class="wow bounceInLeft">
+              <img src="images/img/Awards/Whatson.png" style="padding-bottom: 5%;">
+            </li>
+            <li>
+              <h2>Fact Dining Award Winner</h2>
+              <h3>2019</h3>
+            </li>
+            <li class="wow bounceInLeft">
+              <img src="images/img/Awards/FACT-DINING-Awards.png">
+            </li>
+            <li>
+              <h2>Hozpitality Excellence Awards MENA</h2>
+              <h3>2017</h3>
+            </li>
+            <li class="wow bounceInRight">
+              <img src="images/img/Awards/hospitality.png">
+            </li>
+          </ul>
+        </div> 
       </section>
     </article>
 
     <!--Insta gallery-->
     
     <!--Press&media-->
-    <article class="page-section">
+    <article class="page-section" style="padding-bottom: 10%;">
       <header class="container text-center py-4">
-        <span class="section-header header-animation">Press & Media</span>
+        <span class="section-title">Press & Media</span>
       </header>
         <div class="slider">
           <div class="slide-track">
@@ -380,6 +372,7 @@
     <script src="js/script.js"></script>
     <!--<script src="js/bootstrap.bundle.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>-->
+    <script src='https://webcodefolio.com/js/wow.min.js'></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
