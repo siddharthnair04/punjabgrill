@@ -62,11 +62,6 @@ html{
 .carousel-fade .active.carousel-item-end {
   transition: opacity 0s 2.5s;
 }
-
-.scroll{
-  overflow: auto ;
-  height: 400px;
-}
 .scroll1{
   overflow: hidden;
   width: 400px;
@@ -81,10 +76,9 @@ html{
 }
 
 .section-title {
-    color: #3D3D3D;
     font-family: Arvo;
-    font-size: 1.5em;
-    font-weight: bold;
+    text-align: center;
+    font-size: 2em;
 }
 .section-text {
     font-size: 1.1em;
@@ -95,6 +89,7 @@ html{
   width: 100%;
   height: 700px;
 }
+
 .button{
   padding-top: 20px;
 }
@@ -249,17 +244,66 @@ html{
 }
 /*AWARDS*/
 .awards{
-  padding-left: 50px;
+  padding-left: 30px;
+  align-self: center;
+  width: 100%;
+  padding-bottom: 10%;
 }
-.card-img-top{
-  padding-left: 60px;
-  width: 85%;
+
+ul.tiles {
+  list-style-type: none;
+  width: 100%;
+  height: 490px;
 }
-.card{
-  width: 18rem;
-  height: 20rem;
-  padding-left:5px;
-  padding-right:5px ;
+
+ul.tiles li {
+  float: left;
+  width: 290px;
+  height: 245px;
+}
+
+ul.tiles li {
+  font-family: 'Pathway Gothic One', sans-serif;
+  line-height: 1;
+  box-sizing: border-box;
+}
+
+ul.tiles li h2 {
+  color: black;
+  font-size: 26px;
+}
+ul.tiles li h3{
+  color: black;
+  font-size: 15px;
+}
+
+ul.tiles li img {
+  width: 100%;
+  height: 245px;
+  transition: transform 250ms;
+}
+ul.tiles li img:hover {
+  transform: scale(1.1) rotate(-5deg);
+}
+
+ul.tiles li:first-of-type {
+  text-align: right;
+  padding: 50px 20px;
+}
+
+ul.tiles li:nth-of-type(3) {
+  text-align: right;
+  padding: 120px 20px;
+}
+
+ul.tiles li:nth-of-type(5) {
+  text-align: right;
+  padding: 120px 20px;
+}
+
+ul.tiles li:nth-of-type(7) {
+  text-align: right;
+  padding: 120px 20px;
 }
 /*Press*/
 @keyframes scroll {

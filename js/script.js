@@ -7,3 +7,4 @@ function showBtn(e) {
     document.querySelector('.btn3').style.display = 'block'; 
     e.preventDefault(); 
    }
+   new WOW().init();
