@@ -1,15 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap');
 
-
 html{
   width: 100%;
-  height: 100%;
   padding: 0px;
   margin: 0px;
   overflow-x: hidden;
 }
 
-/*Navbar*/
+/*================================================================Navbar=====================================================================*/
 .logo-cust{
     width: 12%;
 }
@@ -41,7 +39,7 @@ html{
         padding: 10px;
     }
 }
-/*Intro*/
+/*=========================================================Restaurant Intro==============================================================*/
 
 .align-cust{
   left: 6.67%;
@@ -50,7 +48,7 @@ html{
     height: 50%;
     width: 86.2%;
 }
-/*Carousel fade transition*/
+/*=======================================================Carousel fade transition========================================================*/
 .carin{
   top: 20px;
   left: 15px;
@@ -62,34 +60,34 @@ html{
 .carousel-fade .active.carousel-item-end {
   transition: opacity 0s 2.5s;
 }
+.scroll{
+  overflow: auto ;
+  height: 400px;
+}
 .scroll1{
   overflow: hidden;
   width: 400px;
 }
-
-/* Text for page*/
+/*==============================================================Text for page=============================================================*/
 .section-header {
     font-family: Arvo;
     font-size: 2em;
-    font-weight: 400;
-    padding-bottom: 20%;
+    text-align: left;
 }
-
 .section-title {
     font-family: Arvo;
-    text-align: center;
     font-size: 2em;
-}
+    text-align: center;
+    }
 .section-text {
     font-size: 1.1em;
     text-align: left;
 }
-/*Timeline & story*/
+/*============================================================Timeline & story===========================================================*/
 .modal-content{
   width: 100%;
   height: 700px;
 }
-
 .button{
   padding-top: 20px;
 }
@@ -99,6 +97,7 @@ html{
   font-size: larger;
   text-transform: uppercase;
 }
+/*==================================================Used in both Story and About Chef======================================================*/
 .main-container{
   min-height: 100vh;
   width: 100%;
@@ -127,15 +126,8 @@ html{
   align-items: center;
   justify-content: center;
   padding-left: 19px;
-
-  background-color: #fff;
 }
-
-
-
-
-
-
+/*============================================================================================================================================*/
 #timeline {
     display: flex;
   
@@ -237,17 +229,48 @@ html{
     transition: filter 0.5s ease;
     filter: grayscale(100%);
   }
-/*About Chef*/
-.award{
-    height: 10%;
-    width: 50%;
+/*Insta live feed*/
+@keyframes slide {
+  0% {
+    transform: translateX();
+  }
+  100% {
+    transform: translateX(calc(-250px*8));
+  }
+  
 }
-/*AWARDS*/
+.instafeed{
+  margin: 0 105px;
+  display: flex;
+}
+.instafeed{
+  animation: slide 60s linear infinite;
+}
+.instafeed img:hover{
+  animation-play-state: paused;
+}
+.instafeed a img{
+  height: 255px;
+  width: 255px;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+/*.instafeed .track{
+  animation: slide 40s linear infinite;
+}
+.instafeed .feed{
+  border:none; 
+  overflow:hidden;
+  width:4100px; 
+  height:410px
+}*/
+
+
+/*=====================================================================AWARDS=================================================================*/
 .awards{
-  padding-left: 30px;
+  padding-left: 24%;
   align-self: center;
   width: 100%;
-  padding-bottom: 10%;
 }
 
 ul.tiles {
@@ -256,56 +279,56 @@ ul.tiles {
   height: 490px;
 }
 
-ul.tiles li {
+ul.tiles li{
   float: left;
   width: 290px;
-  height: 245px;
+  height: 350px;
 }
 
 ul.tiles li {
-  font-family: 'Pathway Gothic One', sans-serif;
   line-height: 1;
   box-sizing: border-box;
 }
 
 ul.tiles li h2 {
   color: black;
+  padding-top: 2%;
   font-size: 26px;
 }
 ul.tiles li h3{
   color: black;
+  padding-bottom: 3%;
   font-size: 15px;
 }
 
-ul.tiles li img {
-  width: 100%;
-  height: 245px;
+.awd {
   transition: transform 250ms;
+  padding: 4%;
 }
-ul.tiles li img:hover {
+.awd:hover {
   transform: scale(1.1) rotate(-5deg);
 }
 
 ul.tiles li:first-of-type {
-  text-align: right;
-  padding: 50px 20px;
+  text-align: center;
+  padding:0 30px;
 }
 
-ul.tiles li:nth-of-type(3) {
-  text-align: right;
-  padding: 120px 20px;
+ul.tiles li:nth-of-type(2) {
+  text-align: center;
+  padding: 0 30px;
+}
+
+ul.tiles li:nth-of-type(4) {
+  text-align: center;
+  padding: 0 30px;
 }
 
 ul.tiles li:nth-of-type(5) {
-  text-align: right;
-  padding: 120px 20px;
+  text-align: center;
+  padding: 10px;
 }
-
-ul.tiles li:nth-of-type(7) {
-  text-align: right;
-  padding: 120px 20px;
-}
-/*Press*/
+/*==================================================================Press & media===========================================================*/
 @keyframes scroll {
   0% {
     transform: translateX();
@@ -335,8 +358,8 @@ ul.tiles li:nth-of-type(7) {
   padding-left: 10px;
   padding-right: 10px;
 }
-/*Floating SM buttons*/
-.icon-bar ,.inst {
+/*=============================================================Floating SM buttons============================================================*/
+.icon-bar {
   position: fixed;
   top: 50%;
   border-top-right-radius: 10px;
@@ -359,13 +382,29 @@ ul.tiles li:nth-of-type(7) {
   padding: 16px;
   transition:all 0.3s ease ;
 }
+.clos{
+  font-size: 30px;
+  font-weight: bold;
+  color: red;
+  cursor: pointer;
+}
 .inst{
-  left: -1200px;
-  top: 46%;
-  border-radius: 100%;
+  position: fixed;
+  top: 28%;
+  width: 20%;
+  left: 5%;
+}
+.inst a{
+  display: block;
+  text-align: left;
+  padding: 2%;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 30px;
+  color: black;
 }
 
-.icon-bar a ,.inst a {
+.icon-bar a{
   display: block;
   text-align: center;
   padding: 16px;
